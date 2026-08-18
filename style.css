@@ -140,6 +140,7 @@ body {
 }
 
 .widget-title {
+  font-weight: bold;
     padding-bottom: 12px;
     margin-bottom: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -193,4 +194,76 @@ body {
     background: #20232a;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 12px;
+}
+
+.value-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.value-row > span {
+  width: 35px;
+  color: #C5B0F3;
+  font-size: 12px;
+  font-family: "Gotham";
+}
+
+.value-control {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+
+.value-control input {
+    flex: 1;
+    padding: 7px 8px;
+    margin-right: 4px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: #181b20;
+    color: white;
+    font-family: "Gotham";
+}
+
+.copy-btn {
+    padding: 0 10px;
+    border: none;
+    height: 32px;
+    border-radius: 5px;
+    background: #71449d;
+    color: white;
+    font-family: "Gotham";
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background: #8050ae;
+}
+
+.picker-colors {
+    display: flex;
+    gap: 10px;
+}
+
+.color-area {
+    flex: 1;
+    height: 180px;
+    border-radius: 8px;
+    background: #C5B0F3;
+}
+
+#alphaSlider {
+    width: 20px;
+    height: 180px;
+    writing-mode: vertical-lr;
+    direction: rtl;
+}
+
+#hueSlider {
+  width: 275px;
+  height: 20px;
 }

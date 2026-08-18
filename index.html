@@ -59,12 +59,23 @@
             <div class="widget-title">
                 <span>COLOR PICKER</span>
             </div>
-            <div class="picker-body">
-                <div class="color-area">
-                    <div class="color-selector">
 
+            <div class="picker-body">
+
+                <div class="picker-colors">
+                    <div class="color-area">
+                        <div class="color-selector"></div>
                     </div>
+
+                    <input
+                        type="range"
+                        id="alphaSlider"
+                        min="0"
+                        max="100"
+                        value="100"
+                    >
                 </div>
+
                 <input
                     type="range"
                     id="hueSlider"
@@ -140,6 +151,7 @@
 
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
