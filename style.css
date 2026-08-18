@@ -35,6 +35,13 @@ body {
   justify-content: center;
 }
 
+.workspace {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    padding: 30px;
+}
+
 .headertitle h1 {
   margin: 0;
   font-size: 64px;
@@ -132,7 +139,7 @@ body {
     border-radius: 12px;
 }
 
-.palette-title {
+.widget-title {
     padding-bottom: 12px;
     margin-bottom: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -172,4 +179,18 @@ body {
 
 .color-item span {
   font-size: 16px;
+}
+
+
+/* color Picker */
+
+.colorpicker {
+    position: absolute;
+    left: 250px;
+    top: 30px;
+    width: 350px;
+    padding: 18px 14px;
+    background: #20232a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
 }

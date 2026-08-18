@@ -23,8 +23,8 @@
         </div>
     </header>
     <main class="workspace">
-        <aside class="palette">
-            <div class="palette-title">
+        <div class="palette">
+            <div class="widget-title">
                 <span>PALETTE</span>
             </div>
 
@@ -54,7 +54,94 @@
                     <span>#FFFFFF</span>
                 </div>
             </div>
-        </aside>
+        </div>
+        <div class="colorpicker">
+            <div class="widget-title">
+                <span>COLOR PICKER</span>
+            </div>
+            <div class="picker-body">
+                <div class="color-area">
+                    <div class="color-selector">
+
+                    </div>
+                </div>
+                <input
+                    type="range"
+                    id="hueSlider"
+                    min="0"
+                    max="360"
+                    value="258"
+                >
+
+                <div class="color-info">
+
+                    <div class="selected-color" id="selectedColor"></div>
+
+                    <div class="color-values">
+
+                        <div class="value-row">
+                            <span>HEX</span>
+
+                            <div class="value-control">
+                                <input
+                                    id="hexValue"
+                                    value="#C5B0F3"
+                                >
+                                <button class="copy-btn" data-copy="hexValue">
+                                    COPY
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="value-row">
+                            <span>RGB</span>
+
+                            <div class="value-control">
+                                <input
+                                    id="rgbValue"
+                                    value="197, 176, 243"
+                                    readonly
+                                >
+                                <button class="copy-btn" data-copy="rgbValue">
+                                    COPY
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="value-row">
+                            <span>HSL</span>
+
+                            <div class="value-control">
+                                <input
+                                    id="hslValue"
+                                    value="258, 76%, 82%"
+                                    readonly
+                                >
+                                <button class="copy-btn" data-copy="hslValue">
+                                    COPY
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="value-row">
+                            <span>HSV</span>
+
+                            <div class="value-control">
+                                <input
+                                    id="hsvValue"
+                                    value="258, 28%, 95%"
+                                    readonly
+                                >
+                                <button class="copy-btn" data-copy="hsvValue">
+                                    COPY
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
